@@ -11,6 +11,7 @@ class ServiceManager
 (new ServiceManager())->foo->serviceMethod();
 
 
+
 class A {
     public function doActionA($a) {
         return $a;
@@ -23,6 +24,8 @@ class B {
 }
 
 (new A())->doActionA(new B())->doActionB();
+
+
 
 function customExitFunction()
 {
