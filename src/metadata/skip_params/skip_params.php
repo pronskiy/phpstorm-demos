@@ -16,5 +16,4 @@ class Party
     }
 }
 
-$params = [];
-(new Maker())->make($params, Party::class)->;
+(new Maker())->make([], Party::class)->;
