@@ -13,7 +13,7 @@ class ServiceManager
 
 
 class A {
-    public function doActionA($a) {
+    public function doActionA($p0, $p2, $p3) {
         return $a;
     }
 }

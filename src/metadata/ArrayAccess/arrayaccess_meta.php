@@ -26,4 +26,4 @@ class ServiceManager implements ArrayAccess
 
 $serviceManager = (new ServiceManager());
 
-$serviceManager[''];
+$serviceManager['log']->addRecord('', '');

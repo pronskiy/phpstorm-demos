@@ -16,4 +16,4 @@ class Party
     }
 }
 
-(new Maker())->make([], Party::class);
+(new Maker())->make([], Party::class)->;

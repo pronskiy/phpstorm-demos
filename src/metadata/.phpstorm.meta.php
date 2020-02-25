@@ -2,7 +2,7 @@
 
 namespace PHPSTORM_META {
     override(
-        \ServiceManager::__get(0),
+        \ServiceManagertest::__get(0),
         map(
             [
                 'foo' => \FooService::class,
