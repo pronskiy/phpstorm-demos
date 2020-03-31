@@ -1,0 +1,16 @@
+{
+  "name": "JetBrains/PhpStorm_2020.1",
+  "description": "PhpStorm 2020.1",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JetBrains",
+      "email": "phpstorm-support@jetbrains.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "symfony/console": "^5.0.7"
+  }
+}
