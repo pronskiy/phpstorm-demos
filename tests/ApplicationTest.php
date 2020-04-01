@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 class ApplicationTest extends TestCase
 {
     /**
-     * @expectedException \Exception
+     * @expectedException Exception
      */
     public function testRun()
     {
