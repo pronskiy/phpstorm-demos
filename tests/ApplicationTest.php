@@ -8,20 +8,26 @@ use PHPUnit\Framework\TestCase;
 
 class ApplicationTest extends TestCase
 {
+    /**
+     * @expectedException \Exception
+     */
     public function testRun()
     {
-        $this->expectException(Exception::class);
         $str = 'PhpStorm 2020.1';
-        $array = [];
-        $array2 =[];
+        $array = [
+            'key' => 'value'
+        ];
+        $array2 =[
+            'key' => 'value'
+        ];
 
-        $this->assertArrayHasKey($key, $array);
-        $this->assertArrayNotHasKey($key, $array);
-        $this->assertIsString($str);
-        $this->assertIsNotArray($array);
-        $this->assertCount(42, $array);
-        $this->assertSameSize($array, $array2);
-        $this->assertEqualsWithDelta(42, 41.999, 0.1, '');
+        $this->assertTrue(array_key_exists('key', $array));
+        $this->assertFalse(array_key_exists('not_key', $array));
+        $this->assertInternalType('string', $str);
+        $this->assertNotInternalType('array', $str);
+        $this->assertEquals(1, count($array));
+        $this->assertEquals(count($array), count($array2));
+        $this->assertEquals(42, 41.999, '', 0.1);
         $this->assertEquals(42, Application::run());
     }
 }
