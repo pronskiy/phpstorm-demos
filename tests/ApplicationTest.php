@@ -21,7 +21,17 @@ class ApplicationTest extends TestCase
             'key' => 'value'
         ];
 
-        $this->assertTrue(array_key_exists('key', $array));
+
+        $this->assertTrue(
+
+
+            array_key_exists('key', $array)
+        );
+
+
+
+
+
         $this->assertFalse(array_key_exists('not_key', $array));
         $this->assertInternalType('string', $str);
         $this->assertNotInternalType('array', $str);

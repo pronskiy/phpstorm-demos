@@ -16,4 +16,13 @@ class User
         $this->id = $id;
         $this->name = $name;
     }
+
+    /**
+     * @param \App\PHPDoc\User $f
+     * @throws \Exception
+     */
+    public function foo(self $f)
+    {
+        throw new \Exception();
+    }
 }
