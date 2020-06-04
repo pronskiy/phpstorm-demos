@@ -1,15 +1,5 @@
 {
   "name": "jetbrains/PhpStorm_2020.2",
-  "description": "PhpStorm 2020.2 Sample Project",
-  "homepage": "https://www.jetbrains.com/phpstorm/",
-  "minimum-stability": "stable",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "JetBrains",
-      "email": "phpstorm-support@jetbrains.com"
-    }
-  ],
   "repositories": [
     {
       "type": "composer",
@@ -17,6 +7,5 @@
     }
   ],
   "require": {
-    "eventum"
   }
 }
