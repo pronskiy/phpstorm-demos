@@ -1,0 +1,10 @@
+version: '2'
+services:
+  debug:
+    image: phpstorm/php-74-apache-xdebug-29
+    ports:
+      - "8081:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal, remote_port=9001
