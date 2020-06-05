@@ -1,9 +1,7 @@
 version: '2'
 services:
   debug:
-    image: phpstorm/php-74-apache-xdebug-29
-    ports:
-      - "8081:80"
+    image: phpstorm/php-71-cli-xdebug-26
     volumes:
       - ./:/var/www/html
     environment:
