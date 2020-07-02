@@ -24,7 +24,7 @@ class Number
 
 
 $n = new Number();
-$n->setNumber('Not a number');
+//$n->setNumber('Not a number');
 
 
 
