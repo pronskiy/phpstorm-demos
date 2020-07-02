@@ -2,31 +2,21 @@
 
 class Number
 {
-    /** @var int|float $number */
-    private $number;
+    private int|float $number;
 
-    /**
-     * @return int|float
-     */
-    public function getNumber()
-    {
-        return $this->number;
-    }
-
-    /**
-     * @param int|float $number
-     */
-    public function setNumber($number)
+    public function setNumber(int|float $number): void
     {
         $this->number = $number;
     }
+
+    public function getNnmber() : int|float
+    {
+        return '';
+    }
 }
 
-
 $n = new Number();
-//$n->setNumber('Not a number');
-
-
+$n->setNumber('Not a number');
 
 
 
