@@ -1,6 +1,6 @@
 {
   "name": "jetbrains/PhpStorm_2020.2",
   "require": {
-    "php": "8.0"
+    "php": "^8.0"
   }
 }
