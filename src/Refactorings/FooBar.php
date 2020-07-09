@@ -4,10 +4,17 @@ namespace App\Refactorings;
 
 class FooBar
 {
-    public function someMethod()
+    public string $prop = '';
+
+    public function methodToMove()
     {
-        echo 'This is code that belongs here.';
+        echo $this->prop;
         echo 'This is some long code
-              that we want to move to other class';
+          that we want to move to a new class';
     }
+}
+
+function qux()
+{
+    echo 'Functions can be extracted to a Class too.';
 }
