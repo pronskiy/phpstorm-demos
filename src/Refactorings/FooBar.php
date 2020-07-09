@@ -13,8 +13,3 @@ class FooBar
           that we want to move to a new class';
     }
 }
-
-function qux()
-{
-    echo 'Functions can be extracted to a Class too.';
-}
