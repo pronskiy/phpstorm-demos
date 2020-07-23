@@ -1,4 +1,6 @@
-<?php /** @noinspection PhpPrivateFieldCanBeLocalVariableInspection */
+<?php /** @noinspection PhpIllegalPsrClassPathInspection */
+
+/** @noinspection PhpPrivateFieldCanBeLocalVariableInspection */
 
 declare(strict_types=1);
 
@@ -11,20 +13,24 @@ declare(strict_types=1);
 //$n->num = ('Not a number');
 
 
-        class Number
-        {
-            private float|int $number;
 
-            /**
-             * @param int|float $number
-             */
-            public function setNumber(int|float $number)
-            {
-                $this->number = $number;
-            }
+class Number
+{
+    private float|int $number;
+
+    public function setNumber(int|float $number)
+    {
+        $this->number = $number;
+    }
+
+    public function getNumber(): int|float
+    {
+        return $this->number;
+    }
+}
 
 
-        }
+
 
 
 
