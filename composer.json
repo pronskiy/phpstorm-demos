@@ -3,7 +3,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://eventum.github.io/composer/"
+      "url": ""
     }
   ],
   "require": {
