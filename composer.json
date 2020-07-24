@@ -1,11 +1,5 @@
 {
   "name": "jetbrains/PhpStorm_2020.2",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": ""
-    }
-  ],
   "require": {
   }
 }
