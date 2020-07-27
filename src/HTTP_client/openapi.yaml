@@ -28,84 +28,9 @@ tags:
     description: Operations for testing Basic authentication
 
 paths:
-  # /:
-  #   get:
-  #     produces:
-  #       - application/json
-  #       - application/xml
-  #     responses:
-  #       200:
-  #         description: OK
-  #         examples: {
-  #           # application/json:
-  #           #   code: -1
-  #           #   message: The server encountered an unexpected condition which prevented it from fulfilling the request
-  #           # application/json: |
-  #           #   {
-  #           #     "answer": 42
-  #           #   }
-  #           "application/json": {
-  #               "code": -1,
-  #               "message": "The server encountered an unexpected condition which prevented it from fulfilling the request"
-  #             },
-  #           "application/xml": "<answer>42</answer>"
-  #           }
-  # /person/create:
-  #   post:
-  #     summary: Create a new account
-  #     responses:
-  #       201:
-  #         description: The new SQL ident and sport details
-  #         examples:
-  #           application/json: |
-  #             [
-  #               12,
-  #               [
-  #                 {
-  #                   "sql_idnet" : 12,
-  #                   "name" : "Basketball"
-  #                 },
-  #                 {
-  #                   "sql_ident" : 13,
-  #                   "name" : "Ice Hockey"
-  #                 }
-  #               ]
-  #             ]
-
   /get:
     get:
       parameters:
-        # - name: param1
-        #   type: boolean
-        #   in: query
-        # - name: quoteFieldNames
-        #   in: query
-        #   type: boolean
-        # - name: quoteNonNumerics
-        #   in: query
-        #   type: boolean
-        # - name: dataType
-        #   type: string
-        #   in: query
-        # - name: parts
-        #   in: query
-        #   required: true
-        #   description: Parts to retrieve
-        #   type: array
-        #   items:
-        #     type: string
-        #     # enum:
-        #     # - A
-        #     # - B
-        #     # - C
-        #     # - D
-        #     # - E
-        #     # - F
-        #   # enum:
-        #   #   - [A, B]
-        #   #   - [C, D]
-        #   #   - [E, F]
-        #   collectionFormat: multi
         - in: header
           name: Authorization
           type: string
