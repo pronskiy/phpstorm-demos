@@ -1,6 +1,7 @@
 {
   "name": "jetbrains/PhpStorm_2020.2",
   "require": {
+    php
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.5",
