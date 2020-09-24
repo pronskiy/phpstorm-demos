@@ -1,14 +1,25 @@
 <?php
 
-    function foo() : bool
-{
-    return false;
-}
+class User {}
 
+        function fn1(): bool|false {
+            return true;
+        }
 
+        function fn2(Foo|Foo $arg): int|string|INT {
+            echo $arg;
+            return 0;
+        }
 
-    function login(object|User $user) : bool
-    {
+        function fn3(void $arg): string|void {
 
-        return !empty($user);
-    }
+        }
+
+        function fn4(null $arg): false {
+            echo $arg;
+            return false;
+        }
+
+        function fn5(object|User $user) {
+
+        }

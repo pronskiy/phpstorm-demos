@@ -1,8 +1,5 @@
 <?php
 
-function qux()
-{
-    echo 'Functions can be extracted to a Class too.';
-}
+use App\Refactorings\Qux;
 
-qux();
+Qux::qux();

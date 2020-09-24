@@ -2,17 +2,14 @@
 
 namespace App\Inspections;
 
-    class Foo {
-        public int $val;
-        public string $bar;
 
-        public function __construct(int $val) {
-            $this->var = $val; // Ooops, typo
+
+        class Foo
+        {
+            public int $baz;
         }
-    }
 
-    $foo = new Foo(42);
-    var_dump($foo->val); // TypeError
-    var_dump($foo->bar); // TypeError
+        $foo = new Foo();
+        var_dump($foo->baz); // TypeError
 
 

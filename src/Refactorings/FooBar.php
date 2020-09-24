@@ -2,14 +2,24 @@
 
 namespace App\Refactorings;
 
+use App\Refactorings\Baz;
+
 class FooBar
 {
-    public string $prop = '';
+
+    /** @var Baz */
+    private $baz;
+
+    public function __construct(
+    )
+    {
+        $this->baz = new Baz(
+        );
+    }
 
     public function methodToMove()
     {
-        echo $this->prop;
-        echo 'This is some long code
-          that we want to move to a new class';
+        $this->baz->methodToMove(
+        );
     }
 }

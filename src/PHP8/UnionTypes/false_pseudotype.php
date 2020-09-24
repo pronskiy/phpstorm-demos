@@ -3,20 +3,19 @@
 //class Foo {}
 //class Bar {}
 
-    function doSomething() : bool {
+    function isFailed(): bool {
         return (bool)rand(0,1);
     }
 
-    function maybeFoo() : Foo|false
-    {
-        $success = doSomething();
-        return !$success ?: new Foo();
+    function maybeFoo(): Foo|false // false instead of bool
+    {                              // because it will never return true
+        return isFailed() ?: new Foo();
     }
+
+//    function proceed(): false
+//    {
+//        return false;
+//    }
+
 
 $pos = strpos('abc', 'd');
-
-
-    function proceed() :false
-    {
-        return false;
-    }
