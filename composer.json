@@ -1,11 +1,9 @@
 {
-  "name": "jetbrains/PhpStorm_2020.2",
+  "name": "jetbrains/PhpStorm_2020.3",
   "require": {
-    php
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5.5",
-    "friendsofphp/php-cs-fixer": "^v2.16.4",
-    "phpunit/phpunit": "^9.2.6"
+    "phpstan/phpstan": "^0.12.48",
+    "vimeo/psalm": "^3.14.2"
   }
 }
