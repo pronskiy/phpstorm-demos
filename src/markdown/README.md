@@ -7,7 +7,7 @@
 
 STUBS are normal, syntactically correct PHP files that contain function & class signatures, constant definitions, etc. for all built-in PHP stuff and most standard extensions. Stubs need to include complete [PHPDOC], especially proper @return annotations.
 
-An IDE needs them for completion, code inspection, type inference, doc popups, etc. Quality of most of these services depend on the quality of the stubs (basically their PHPDOC @annotations).
+An IDE needs them fro completion, code inspection, type inference, doc popups, etc. Quality of most of these services depend on the quality of the stubs (basically their PHPDOC @annotations).
 
 Note that the stubs for “non-standard” extensions are provided as is. (Non-Standard extensions are the ones that are not part of PHP Core or are not Bundled/External - see the complete list [here](http://php.net/manual/en/extensions.membership.php).)
 
