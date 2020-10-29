@@ -13,6 +13,9 @@ $response = $client->request(
     ],
 );
 
+
+
+
 echo $response->getStatusCode();
 echo $response->getHeaderLine('content-type');
 echo $response->getBody();
