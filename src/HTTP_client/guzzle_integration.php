@@ -1,18 +1,18 @@
-<?php
+<?php /** @noinspection PhpUnhandledExceptionInspection */
 
-use GuzzleHttp\Client;
+require __DIR__ . '/../../vendor/autoload.php';
 
-$client = new Client();
-$response = $client->request('GET', 'https://httpbin.org/get');
 
-echo $response->getStatusCode(); // 200
-echo $response->getHeaderLine('content-type'); // 'application/json; charset=utf8'
-echo $response->getBody(); // '{"id": 1420053, "name": "guzzle", ...}'
+$client = new \GuzzleHttp\Client();
+$response = $client->request(
+    'POST',
+    '/post',
+    [
+        'base_uri' => 'https://httpbin.org',
+        'json' => ['foo' => 'bar'],
+    ],
+);
 
-// Send an asynchronous request.
-//$request = new \GuzzleHttp\Psr7\Request('GET', 'http://httpbin.org');
-//$promise = $client->sendAsync($request)->then(function ($response) {
-//    echo 'I completed! ' . $response->getBody();
-//});
-
-//$promise->wait();
+echo $response->getStatusCode();
+echo $response->getHeaderLine('content-type');
+echo $response->getBody();
