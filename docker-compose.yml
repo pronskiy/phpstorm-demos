@@ -1,8 +1,0 @@
-version: '2'
-services:
-  debug:
-    image: phpstorm/php-cli:7.4-xdebug2.9
-    volumes:
-      - ./:/var/www/html
-    environment:
-      XDEBUG_CONFIG: remote_host=host.docker.internal, remote_port=9001
