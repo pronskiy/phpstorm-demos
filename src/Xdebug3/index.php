@@ -12,6 +12,7 @@ $dtos = [
     new DTO('PHP 8'),
 ];
 
+
 foreach ($dtos as $dto) {
     echo $dto->prop;
 }
