@@ -2,15 +2,22 @@
 
 namespace App;
 
-class Application
-{
-    public static function run() :int
-    {
-        return 42;
-    }
 
-    public function compute()
+    use JetBrains\PhpStorm\NoReturn;
+
+    class Applicationr
     {
-        return 42;
+        #[\JetBrains\PhpStorm\NoReturn]
+        public function terminate(): void {
+            exit();
+        }
+
+        public function run(): void
+        {
+            echo 'Hello world!';
+
+            $this->terminate();
+
+            echo 'Good bye.'; // <-- Dead code
+        }
     }
-}

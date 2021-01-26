@@ -1,9 +1,11 @@
 {
   "name": "jetbrains/PhpStorm_2020.3",
   "require": {
+    "guzzlehttp/guzzle": "^7.2.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^0.12.48",
-    "vimeo/psalm": "^3.14.2"
+    "vimeo/psalm": "^3.14.2",
+    "spatie/ray": "*"
   }
 }

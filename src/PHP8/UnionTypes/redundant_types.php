@@ -1,4 +1,5 @@
 <?php
+namespace PHP8\UnionTypes;
 
 class User {}
 

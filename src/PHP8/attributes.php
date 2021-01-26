@@ -5,33 +5,15 @@ namespace App\PHP8;
 
 
 
-    use Attribute;
-
-    #[Attribute(
-        Attribute::TARGET_CLASS |
-        Attribute::TARGET_METHOD |
-        Attribute::IS_REPEATABLE
-    )]
-    class FooAttribute
-    {
-    }
-
-
-
-
-
-
-
-
 
 
 class Base
 {
-    #[FooAttribute]
-    public function m(#[FooAttribute] $value)
-    {
-        $a = $value ?? throw new \InvalidArgumentException();
-    }
+//    #[FooAttribute]
+//    public function m(#[FooAttribute] $value)
+//    {
+//        $a = $value ?? throw new \InvalidArgumentException();
+//    }
 }
 
 class Child extends Base

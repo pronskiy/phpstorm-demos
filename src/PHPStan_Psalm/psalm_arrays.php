@@ -1,6 +1,7 @@
 <?php /** @noinspection PhpIllegalPsrClassPathInspection */
 
-class User
+
+    class User
 {
     public function getFullName(): string
     {
@@ -18,7 +19,6 @@ class User
         ];
     }
 
-    foreach (returnsArray() as $k => $user)
-    {
-        $user->getFullName();
-    }
+//    foreach (returnsArray() as $k => )
+//    {
+//    }
