@@ -6,6 +6,7 @@ class DTO {
     ) { }
 }
 
+
 $dtos = [
     new DTO('Xdebug 3'),
     new DTO('PhpStorm'),
@@ -14,5 +15,5 @@ $dtos = [
 
 
 foreach ($dtos as $dto) {
-    echo $dto->prop;
+    echo $dto->prop, "\n";
 }
