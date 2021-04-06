@@ -1,0 +1,5 @@
+
+.article a:hover {
+  color: red;
+  font-weight: bold;
+}
