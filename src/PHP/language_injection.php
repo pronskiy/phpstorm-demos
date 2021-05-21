@@ -2,8 +2,14 @@
 $subject = '';
 
 
+
+
     $pattern = "/^PhpStorm\s\d{4}\.\d$/"; // RegExp injected automatically
     preg_match($pattern, $subject);
+
+
+
+
 
 
 

@@ -1,7 +1,11 @@
-<?php
+<?php /** @noinspection PhpUndefinedClassInspection */
 
-    class Foo
+    class DTO
     {
-        public function __construct(public $prop) {
+
+        public string $prop;
+
+        public function __construct(string $prop) {
+            $this->prop = $prop;
         }
     }

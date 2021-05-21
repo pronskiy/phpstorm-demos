@@ -14,6 +14,7 @@ $falsableValue = '';
         ? reset($array)
         : throw new InvalidArgumentException();
 
+    json_decode();
 
 $request_method = '';
 
