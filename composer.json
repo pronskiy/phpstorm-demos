@@ -2,7 +2,8 @@
   "name": "jetbrains/phpstorm_2021.1",
   "description": "",
   "require": {
-    "php": "^8.0"
+    "php": "^8.0",
+    "symfony/console": "*"
   },
   "suggest": {
     "ext-imagick": "*"

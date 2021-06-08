@@ -1,5 +1,7 @@
 <?php
 
-phpinfo(INFO_CREDITS);
+echo 'hello';
+//phpinfo(INFO_CREDITS);
+
 
 //var_dump($_SERVER);
