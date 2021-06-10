@@ -26,5 +26,13 @@ function sortAndEcho($items)
         }
         $items[$j + 1] = $val;
     }
-    echo $items;
+
+    echo var_export($items, true);
 }
+
+
+
+
+
+
+
