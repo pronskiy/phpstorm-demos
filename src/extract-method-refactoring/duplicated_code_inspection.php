@@ -14,7 +14,6 @@ function insertionSort($array): array
     return $array;
 }
 
-
 function sortAndEcho($items)
 {
     for ($i = 0; $i < count($items); $i++) {
