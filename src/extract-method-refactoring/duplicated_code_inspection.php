@@ -2,7 +2,8 @@
 
 function insertionSort($array): array
 {
-    for ($i = 0; $i < count($array); $i++) {
+    $count = count($array);
+    for ($i = 0; $i < $count; $i++) {
         $val = $array[$i];
         $j = $i - 1;
         while ($j >= 0 && $array[$j] > $val) {
@@ -16,7 +17,8 @@ function insertionSort($array): array
 
 function sortAndEcho($items)
 {
-    for ($i = 0; $i < count($items); $i++) {
+    $count = count($items);
+    for ($i = 0; $i < $count; $i++) {
         $val = $items[$i];
         $j = $i - 1;
         while ($j >= 0 && $items[$j] > $val) {
@@ -25,8 +27,7 @@ function sortAndEcho($items)
         }
         $items[$j + 1] = $val;
     }
-
-    echo var_export($items, true);
+    return $items;
 }
 
 
