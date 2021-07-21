@@ -1,7 +1,8 @@
 <?php
 
-function insertionSort($array): array
+function sortArray($array): array
 {
+    // sort array insertion sort
     $count = count($array);
     for ($i = 0; $i < $count; $i++) {
         $val = $array[$i];
@@ -15,7 +16,7 @@ function insertionSort($array): array
     return $array;
 }
 
-function sortAndEcho($items)
+function sortItems($items)
 {
     $count = count($items);
     for ($i = 0; $i < $count; $i++) {
