@@ -1,51 +1,60 @@
-<?php /** @noinspection PhpExpressionResultUnusedInspection */
-
+<?php
+/** @noinspection PhpExpressionResultUnusedInspection */
 /** @noinspection PhpPureAttributeCanBeAddedInspection */
-//namespace App\PHP81;
-//
-//enum Value
-//{
-//    case King;
-//}
-//
-//
-//
-//    enum Suit: string {
-//        //region cases...
-//        case Hearts     = '♥';
-//        case Diamonds   = '♦';
-//        case Clubs      = '♣';
-//        case Spades     = '♠';
-//        //endregion
-//
-//        public function color(): string {
-//            return match($this) {
-//                Suit::Hearts, Suit::Diamonds => 'Red',
-//                Suit::Clubs, Suit::Spades => 'Black',
-//            };
-//        }
-//
-//        public function from() {}
-//
-//        public function __construct() {}
-//        public function __get(string $name) {}
-//    }
-//
-//
-//
-//
-//    $s1 = Suit::from('♥'); // Suit::Hearts
-//    $s2 = Suit::tryFrom('x'); // null
-//
-//    $suits = Suit::cases();
-//    $randomSuit = $suits[array_rand($suits)];
-//
-//
-//    enum PhpStormVersion: string
+{
+
+
+//    enum Suit
 //    {
-//        case v2021_1 = '2021.1';
-//        case v2021_2 = '2021.2';
+//        case Clubs;
+//        case Diamonds;
+//        case Hearts;
+//        case Spades;
 //    }
+//
+//    $spades = Suit::Spades;
+//
+//    function acceptsSuit(Suit $suit): void {}
+//
+//    acceptsSuit(Suit::Spades);
+
+    enum Suit: string
+    {
+        case Hearts = '♥';
+        case Diamonds = '♦';
+        case Clubs = '♣';
+        case Spades = '♠';
+    }
+
+    $clubs = Suit::from('♣');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+//    function acceptSuit(Suit $suit): void
+//    {
+//
+//    }
+//
+//    acceptSuit(Suit::Clubs);
+
+
+
+
+
 
 
 

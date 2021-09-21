@@ -3,6 +3,11 @@
 function sortArray($array): array
 {
     // sort array insertion sort
+    return sortArrayInsertionSort($array);
+}
+
+function sortArrayInsertionSort($array): mixed
+{
     $count = count($array);
     for ($i = 0; $i < $count; $i++) {
         $val = $array[$i];
@@ -18,17 +23,7 @@ function sortArray($array): array
 
 function sortItems($items)
 {
-    $count = count($items);
-    for ($i = 0; $i < $count; $i++) {
-        $val = $items[$i];
-        $j = $i - 1;
-        while ($j >= 0 && $items[$j] > $val) {
-            $items[$j + 1] = $items[$j];
-            $j--;
-        }
-        $items[$j + 1] = $val;
-    }
-    return $items;
+    return sortArrayInsertionSort($items);
 }
 
 

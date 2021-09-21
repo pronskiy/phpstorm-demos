@@ -3,7 +3,12 @@
   "description": "",
   "require": {
     "php": "^8.0",
-    "symfony/console": "*"
+    "symfony/console": "*",
+    "illuminate/collections": "*",
+    "doctrine/collections": "*"
+  },
+  "require-dev": {
+    "phpunir/phpunit": "*"
   },
   "suggest": {
     "ext-imagick": "*"
