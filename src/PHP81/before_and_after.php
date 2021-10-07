@@ -1,8 +1,8 @@
 <?php
 
-enum Status
-{
-    case draft;
-    case published;
-    case archived;
-}
+//enum Status
+//{
+//    case draft;
+//    case published;
+//    case archived;
+//}
