@@ -1,10 +1,11 @@
 {
   "name": "jetbrains/phpstorm_2021.1",
   "description": "",
+  "minimum-stability": "dev",
   "require": {
     "php": "^8.0",
     "symfony/console": "*",
-    "illuminate/collections": "*",
+    "illuminate/collections": "dev-master",
     "doctrine/collections": "*"
   },
   "require-dev": {

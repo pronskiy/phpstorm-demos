@@ -5,10 +5,10 @@
 /** @noinspection PhpPropertyOnlyWrittenInspection */
 
 use App\User;
+    use Doctrine\Common\Collections\ArrayCollection;
 
 
     use Doctrine\Common\Collections\Collection;
-    use Doctrine\Common\Collections\ArrayCollection;
 
     /**
      * @return Collection<int, User>
@@ -18,7 +18,7 @@ use App\User;
     }
 
     foreach (getUsers() as $user) {
-        $user->
+        echo $user->getEmail();
     }
 
 

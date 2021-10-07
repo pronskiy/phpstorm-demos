@@ -2,3 +2,4 @@
 /php_error.log
 /.php_cs.cache
 /.phpunit.result.cache
+/src/deployment/upload/

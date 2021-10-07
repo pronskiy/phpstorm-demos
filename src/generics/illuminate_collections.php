@@ -1,12 +1,29 @@
-<?php
+<?php /** @noinspection PhpUnusedLocalVariableInspection */
 
 namespace App\generics;
 
-use Illuminate\Support\Collection;
+    use App\User;
+
+
+    use Illuminate\Support\Collection;
+
+    /**
+     * @return Collection<int, User>
+     */
+    function getUsers(): Collection {
+        return Collection::make([new User]);
+    }
+
+    $userEmail = getUsers()->get(0)->getEmail();
+
+
+
+
+
 
 class User
 {
-    public string $name;
+//    public string $name;
     private string $email;
 
     public function getEmail()
@@ -16,17 +33,9 @@ class User
 }
 
 
-/** @return array<int, User> */
-function getUsers(): array
-{
-    return [new User];
+foreach (getUsersCollection() as $user) {
+    $user->
 }
 
-/** @return Collection<int, User> */
-function getUsersCollection(): Collection
-{
-    return Collection::make([new User]);
-}
-
-
-$users = getUsersCollection()->get(0)->;
+getUsersCollection()->map(function($key, $value) {
+});
