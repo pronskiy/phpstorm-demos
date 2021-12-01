@@ -18,9 +18,6 @@ function count_and_iterate(Iterator&\Countable $value) {
 0o16 === 14; // true
 0o123 === 83; // true
 
-0O16 === 14; // true
-0O123 === 83; // true
-
 016 === 0o16; // true
 016 === 0O16; // true
 
