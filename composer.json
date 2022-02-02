@@ -3,7 +3,7 @@
   "description": "",
   "minimum-stability": "dev",
   "require": {
-    "php": "^8.0",
+    "php": "^8.1",
     "symfony/console": "*",
     "illuminate/collections": "dev-master",
     "doctrine/collections": "*"

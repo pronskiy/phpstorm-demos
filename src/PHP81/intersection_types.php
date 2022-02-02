@@ -15,21 +15,20 @@ namespace App\PHP81;
 
 // TODO check completion
 
-    class Foo {
-        public function foo() {
-
-        }
+    interface Foo {
+        public function foo();
     }
 
-    class Bar {
-        public function bar() {
-
-        }
+    interface Bar {
+        public function bar();
     }
 
     function accepts_foobar(Foo&Bar $foobar) {
         $foobar->
     }
+
+
+
 
     class DTO
     {
