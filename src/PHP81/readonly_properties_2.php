@@ -14,7 +14,7 @@ class User
     }
 }
 
-$user = new User('Nikita');
+//$user = new User('Nikita');
 echo $user->name;            // Ok
 $user->name = 'Roman';       // Error – cannot be changed after initialization
 

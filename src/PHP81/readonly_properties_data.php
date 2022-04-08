@@ -11,7 +11,7 @@ namespace App\PHP81;
         }
     }
 
-    $user = new User();
+//    $user = new User();
     $user->email = 'm@php.net';  // Error – can only be initialized from
                                  // the same scope where the property is declared
 

@@ -11,7 +11,7 @@ namespace App\PHP81;
         }
     }
 
-    $user = new User('Nikita');
+//    $user = new User('Nikita');
     echo $user->name;            // Ok
     $user->name = 'Roman';       // Error: Cannot modify readonly property
                                  //        after initialization
