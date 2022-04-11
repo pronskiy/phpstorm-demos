@@ -8,6 +8,6 @@ class CheckerTest extends TestCase
 
     public function testCheck()
     {
-        $this->assertTrue(true);
+        $this->assertTrue(false);
     }
 }

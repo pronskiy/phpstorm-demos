@@ -3,8 +3,9 @@
 
 namespace PHPSTORM_META {
 	override(
-		\Foo::__call(0), map([
-			'' => '$0Instance',
+		\Phake::mock(0),
+		map([
+			'' => '@|Phake_IMock',
 		])
 	);
 }

@@ -7,16 +7,19 @@ namespace App\generics;
 
     use Illuminate\Support\Collection;
 
-    /**
-     * @return Collection<int, User>
-     */
-    function getUsers(): Collection {
-        return Collection::make([new User]);
-    }
+/**
+ * @return Collection<int, User>
+ */
+function getUsers(): Collection {
+	return collect([new User]);
+}
 
-    $userEmail = getUsers()->get(0)->getEmail();
+$userEmail = getUsers()->get(0)->getEmail();
 
 
+foreach (getUsers() as $user) {
+		$user->
+}
 
 
 

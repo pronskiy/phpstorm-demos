@@ -6,7 +6,8 @@
     "php": "^8.1",
     "symfony/console": "*",
     "illuminate/collections": "dev-master",
-    "doctrine/collections": "*"
+    "doctrine/collections": "*",
+    "ext-gmp": "*"
   },
   "require-dev": {
     "phpunir/phpunit": "*"

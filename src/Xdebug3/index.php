@@ -8,12 +8,17 @@ class DTO {
 
 
 $dtos = [
-    new DTO('Xdebug 3'),
-    new DTO('PhpStorm'),
-    new DTO('PHP 8'),
+	new DTO('Xdebug 3'),
+	new DTO('PhpStorm'),
+	new DTO('PHP 8'),
 ];
 
 
 foreach ($dtos as $dto) {
-    echo $dto->prop, "\n";
+	dump($dto);
+}
+
+function dump(DTO $dto): void
+{
+	echo $dto->prop, PHP_EOL;
 }
