@@ -1,6 +1,0 @@
-<?php
-
-enum Status: int
-{
-
-}
