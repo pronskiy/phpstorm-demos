@@ -1,6 +1,6 @@
 <?php
 
-namespace App\PHP81\FC;
+namespace App\PHP_81\FC;
 
 class Foo
 {
@@ -9,7 +9,7 @@ class Foo
 
 class Bar extends Foo
 {
-    public const XX = "bar";
+//    public const XX = "bar";
 }
 
 

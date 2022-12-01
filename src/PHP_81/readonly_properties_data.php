@@ -1,7 +1,7 @@
 <?php /** @noinspection PhpObjectFieldsAreOnlyWrittenInspection */
 /** @noinspection PhpPureAttributeCanBeAddedInspection */
 
-namespace App\PHP81;
+namespace App\PHP_81;
 
     class User
     {

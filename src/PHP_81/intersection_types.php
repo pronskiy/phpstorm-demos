@@ -1,6 +1,6 @@
 <?php /** @noinspection PhpExpressionResultUnusedInspection */
 
-namespace App\PHP81;
+namespace App\PHP_81;
 
     function count_and_iterate(\Iterator&\Countable $value)
     {

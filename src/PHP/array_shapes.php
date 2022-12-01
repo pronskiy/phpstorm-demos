@@ -35,7 +35,7 @@ use JetBrains\PhpStorm\ArrayShape;
 //		return [];
 //	}
 
-	getData()[0]->getEmail()
+	getData()[0]->getEmail();
 
 
 	/**
