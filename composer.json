@@ -10,7 +10,8 @@
     "ext-gmp": "*"
   },
   "require-dev": {
-    "phpunir/phpunit": "*"
+    "phpspec/prophecy": "^1.14.0",
+    "phpunit/phpunit": "*"
   },
   "suggest": {
     "ext-imagick": "*"
