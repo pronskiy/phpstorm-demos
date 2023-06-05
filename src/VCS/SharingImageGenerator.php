@@ -1,4 +1,7 @@
-<?php /** @noinspection PhpUndefinedClassInspection */
+<?php /** @noinspection PhpIllegalPsrClassPathInspection */
+/** @noinspection PhpUndefinedNamespaceInspection */
+
+/** @noinspection PhpUndefinedClassInspection */
 
 namespace App\Bundles\SharingImageGeneratorBundle;
 
@@ -11,8 +14,13 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class SharingImageGenerator implements EventSubscriberInterface
 {
-    protected $configuration;
+    protected Configuration $configuration;
 
+    public function afterRun()
+    {
+        
+    }
+    
     public static function getSubscribedEvents()
     {
         return [

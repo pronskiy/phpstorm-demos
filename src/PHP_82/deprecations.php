@@ -12,7 +12,7 @@ var_dump("self::method"());
 ["parent", "method"]();
 ["static", "method"]();
 ["Foo", "Bar::method"]();
-[new Foo, "Bar::method"]();
+[new FooDebug, "Bar::method"]();
 
 
 class Bar {
@@ -32,7 +32,7 @@ class Foo extends Bar
         $this->call(parent::method(...));
         $this->call(static::method(...));
         $this->call(["Foo", "Bar::method"]);
-        $this->call([new Foo, "Bar::method"]);
+        $this->call([new FooDebug, "Bar::method"]);
     }
     function call(callable $c) { $c(); }
 
@@ -41,12 +41,12 @@ class Foo extends Bar
 
 }
 
-(new Foo())->deprecations();
+(new FooDebug())->deprecations();
 
 
     "printf"('Hello World');
     "Foo::method"();
-    [new Foo, "method"]();
+    [new FooDebug, "method"]();
 
     
     

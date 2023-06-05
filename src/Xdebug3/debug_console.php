@@ -11,5 +11,5 @@ class Foo
     }
 }
 
-$foo = new Foo('baz');
+$foo = new FooDebug('baz');
 echo $foo->bar;

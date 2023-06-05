@@ -8,9 +8,9 @@ class DTO {
 
 
 $dtos = [
-	new DTO('Xdebug 3'),
-	new DTO('PhpStorm'),
-	new DTO('PHP 8'),
+	new DTO('Xdebug 3.1'),
+	new DTO('PhpStorm 2023.1'),
+	new DTO('PHP 8.2'),
 ];
 
 
